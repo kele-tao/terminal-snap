@@ -231,11 +231,19 @@ def test_html_export_embeds_png(tmp_path: Path) -> None:
 
 
 def test_fallback_glyph_is_reported(tmp_path: Path) -> None:
+    from terminal_snap.fonts import fallback_font_path
+
+    primary = discover_fonts()[0]
+    if fallback_font_path("中", 30) is None:
+        pytest.skip("no CJK-capable font installed on this machine")
     s = scene()
-    s.lines = [__import__("terminal_snap.scene", fromlist=["SceneLine"]).SceneLine.from_raw(
-        "cjk 中文 emoji")]
+    s.font = primary.family
+    s.lines = [
+        __import__("terminal_snap.scene", fromlist=["SceneLine"]).SceneLine.from_raw("cjk 中文")
+    ]
     result = render_scene(s, tmp_path / "cjk.png")
     assert result.fallback_glyphs, "expected CJK glyphs to need a fallback font"
+    assert result.missing_glyphs == ()
 
 
 def test_renderer_font_advance_is_positive() -> None:
