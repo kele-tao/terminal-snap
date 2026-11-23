@@ -183,7 +183,13 @@ def test_prompt_prefix_is_only_for_cmd_lines() -> None:
 def test_wrap_spans_hard_break() -> None:
     rows = wrap_spans(parse_ansi("x" * 120), 40)
     assert len(rows) == 3
-    assert all(len(row) == 40 for row in rows)
+    widths = [sum(len(span.text) for span in row) for row in rows]
+    assert widths == [40, 40, 40]
+
+
+def test_wrap_spans_merges_runs() -> None:
+    rows = wrap_spans(parse_ansi("x" * 120), 40)
+    assert all(len(row) == 1 for row in rows)
 
 
 def test_wrap_spans_prefers_spaces() -> None:

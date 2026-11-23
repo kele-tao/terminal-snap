@@ -5,73 +5,73 @@
   "results": [
     {
       "case": "parse scene (1000 lines)",
-      "ms": 12.99,
+      "ms": 16.02,
       "measured": "parse_yaml() on a synthetic scene"
     },
     {
       "case": "parse scene (5000 lines)",
-      "ms": 63.96,
+      "ms": 68.31,
       "measured": "parse_yaml() on a synthetic scene"
     },
     {
       "case": "parse scene (20000 lines)",
-      "ms": 291.14,
+      "ms": 270.61,
       "measured": "parse_yaml() on a synthetic scene"
     },
     {
       "case": "parse ANSI log (1.0 MB)",
-      "ms": 145.27,
+      "ms": 136.0,
       "measured": "3942 lines, 1.0 MB"
     },
     {
       "case": "parse ANSI log (3.0 MB)",
-      "ms": 422.78,
+      "ms": 547.83,
       "measured": "11826 lines, 3.1 MB"
     },
     {
       "case": "parse ANSI log (5.0 MB)",
-      "ms": 800.4,
+      "ms": 1121.64,
       "measured": "19710 lines, 5.2 MB"
     },
     {
       "case": "rasterise 40 rows @2x",
-      "ms": 126.36,
+      "ms": 155.59,
       "px": "1976x2128",
       "measured": "Renderer.render() in memory"
     },
     {
       "case": "rasterise 200 rows @2x",
-      "ms": 628.23,
+      "ms": 739.03,
       "px": "1994x9968",
       "measured": "Renderer.render() in memory"
     },
     {
       "case": "rasterise 40 rows @1x",
-      "ms": 60.97,
+      "ms": 76.82,
       "px": "988x1044",
       "measured": "Renderer.render() in memory"
     },
     {
       "case": "rasterise 40 rows @3x",
-      "ms": 242.38,
+      "ms": 331.12,
       "px": "2860x3173",
       "measured": "Renderer.render() in memory"
     },
     {
       "case": "render + PNG encode 40 rows",
-      "ms": 383.81,
+      "ms": 500.78,
       "kb": 286.7,
       "measured": "full render path including disk write"
     },
     {
       "case": "render + PNG encode 200 rows",
-      "ms": 2014.18,
+      "ms": 2742.06,
       "kb": 1526.5,
       "measured": "full render path including disk write"
     },
     {
       "case": "render the bundled gallery (6 scenes)",
-      "ms": 889.94,
+      "ms": 1218.27,
       "measured": "load_scene() plus render_scene() for every examples/*.yaml"
     }
   ]

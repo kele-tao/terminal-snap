@@ -203,6 +203,24 @@ CONTROL_CHARS = ("\r", "\b", "\t", "\x00", "\x07", "\x0b", "\x0c")
 _CONTROL_RE = re.compile("[\r\b\t\x00\x07\x0b\x0c]")
 
 
+def merge_spans(spans: Iterable[Span]) -> list[Span]:
+    """Coalesce adjacent spans that share a style (and drop empty ones).
+
+    Wrapping naturally produces one span per character; merging them back means the
+    renderer issues one draw call per style run instead of one per cell, and the SVG
+    exporter writes one <text> element instead of hundreds.
+    """
+    merged: list[Span] = []
+    for span in spans:
+        if not span.text:
+            continue
+        if merged and merged[-1].style == span.style:
+            merged[-1] = Span(merged[-1].text + span.text, span.style)
+        else:
+            merged.append(span)
+    return merged
+
+
 def normalize_controls(spans: Iterable[Span], tab_width: int = 4) -> list[Span]:
     """Interpret CR / BS / TAB / NUL exactly like a single terminal line does.
 

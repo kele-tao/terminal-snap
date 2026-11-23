@@ -13,7 +13,7 @@ from dataclasses import dataclass, field, replace
 from pathlib import Path
 from typing import Any
 
-from .ansi import EMPTY, Span, Style, cell_width, parse_ansi
+from .ansi import EMPTY, Span, Style, cell_width, merge_spans, parse_ansi
 from .errors import SceneError, ThemeError
 from .themes import builtin_names, load_theme
 from .yaml_lite import YamlError, parse_yaml
@@ -503,7 +503,7 @@ def wrap_spans(spans: Sequence[Span], width: int) -> list[tuple[Span, ...]]:
             current.append(Span(ch, span.style))
             cells += w
     lines.append(tuple(current))
-    return lines
+    return [tuple(merge_spans(line)) for line in lines]
 
 
 def _split_cells(spans: list[Span], at: int) -> tuple[list[Span], list[Span]]:

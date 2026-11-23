@@ -198,16 +198,16 @@ Measured with `python benchmarks/run.py` on Python 3.12.10 / Windows 11, median 
 
 | Case | Time |
 | --- | --- |
-| parse scene (1,000 lines) | 13.0 ms |
-| parse scene (20,000 lines) | 291 ms |
-| parse ANSI log (1.0 MB) | 145 ms |
-| parse ANSI log (5.0 MB) | 800 ms |
-| rasterise 40 rows @2x (1976×2128 px) | 126 ms |
-| rasterise 40 rows @3x (2860×3173 px) | 242 ms |
-| render + PNG encode 40 rows (287 KB PNG) | 384 ms |
-| render the bundled 6-scene gallery | 890 ms |
+| parse scene (1,000 lines) | 16 ms |
+| parse scene (20,000 lines) | 271 ms |
+| parse ANSI log (1.0 MB) | 136 ms |
+| parse ANSI log (5.0 MB) | 1.12 s |
+| rasterise 40 rows @2x (1976×2128 px) | 156 ms |
+| rasterise 40 rows @3x (2860×3173 px) | 331 ms |
+| render + PNG encode 40 rows (287 KB PNG) | 501 ms |
+| render the bundled 6-scene gallery | 1.22 s |
 
-The 5 MB ANSI case exists because that is the size of a log someone might want to turn into a screenshot. It parses in 0.8 s. Before memoising `(style, sequence)` pairs it took 3.7 s — the optimisation is visible in the git history, not just in this table.
+The 5 MB ANSI case exists because that is the size of a log someone might want to turn into a screenshot. Before memoising `(style, sequence)` pairs it took 3.7 s on the same input; after the memo table and the control-character fast path it is ~1.1 s. Wall times move by ±20% with background load, which is why the committed `results.md` is the number to trust rather than this table.
 
 ## Comparison
 
