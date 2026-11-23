@@ -163,7 +163,9 @@ def scene_from_capture(
         scene.lines[-1] = SceneLine.from_raw(cap.command, "cmd")
     for text in cap.lines:
         scene.lines.append(SceneLine.from_raw(text, "out"))
-    if not scene.lines:
+    if not cap.lines:
+        # Keep the scene renderable and explicit about what happened, rather than
+        # emitting a window with a prompt and nothing after it.
         scene.lines.append(SceneLine.from_raw("(no output)", "notice"))
     return scene
 
