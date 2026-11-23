@@ -1,0 +1,28 @@
+# Captured by terminal-snap record on win32 - output is verbatim, ANSI codes preserved.
+title: python examples/boom.py fails
+theme: solarized-dark
+width: 78
+chrome: plain
+prompt: ❯
+lines:
+  - cmd: python examples/boom.py
+  - out: "Traceback (most recent call last):"
+  - out: "  File \"examples\\boom.py\", line 27, in main"
+  - out: "    resolve_theme(\"dracula\")"
+  - out: "  File \"examples\\boom.py\", line 21, in resolve_theme"
+  - out: "    config = load_config(Path(\"scenes/missing.json\"))"
+  - out: "             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+  - out: "  File \"examples\\boom.py\", line 17, in load_config"
+  - out: "    return json.loads(path.read_text(encoding=\"utf-8\"))"
+  - out: "                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+  - out: … 6 lines omitted …
+  - out: "FileNotFoundError: [Errno 2] No such file or directory: 'scenes\\\\missing.json'"
+  - out: ""
+  - out: "The above exception was the direct cause of the following exception:"
+  - out: ""
+  - out: "Traceback (most recent call last):"
+  - out: "  File \"examples\\boom.py\", line 39, in <module>"
+  - out: "    main()"
+  - out: "  File \"examples\\boom.py\", line 29, in main"
+  - out: "    raise RuntimeError(\"cannot start the renderer: theme config is unreadable\") from exc"
+  - out: "RuntimeError: cannot start the renderer: theme config is unreadable"

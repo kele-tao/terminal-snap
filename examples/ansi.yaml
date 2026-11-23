@@ -1,0 +1,25 @@
+# Captured by terminal-snap record on win32 - output is verbatim, ANSI codes preserved.
+title: examples/ansi_demo.py
+theme: dracula
+width: 92
+chrome: macos
+prompt: ❯
+lines:
+  - cmd: python examples/ansi_demo.py
+  - out: "\x1b[1mbold        build succeeded\x1b[0m"
+  - out: "\x1b[2mdim         cache hit, no work to do\x1b[0m"
+  - out: "\x1b[3mitalic      italic comment\x1b[0m"
+  - out: "\x1b[4munderline   link to the docs\x1b[0m"
+  - out: "\x1b[7mreverse      selected row \x1b[0m"
+  - out: "\x1b[9mstrike      deprecated flag\x1b[0m"
+  - out: ""
+  - out: "16-colour:  \x1b[0m\x1b[30m  0 \x1b[0m\x1b[31m  1 \x1b[0m\x1b[32m  2 \x1b[0m\x1b[33m  3 \x1b[0m\x1b[34m  4 \x1b[0m\x1b[35m  5 \x1b[0m\x1b[36m  6 \x1b[0m\x1b[37m  7 \x1b[0m"
+  - out: "bright:     \x1b[0m\x1b[90m  8 \x1b[0m\x1b[91m  9 \x1b[0m\x1b[92m 10 \x1b[0m\x1b[93m 11 \x1b[0m\x1b[94m 12 \x1b[0m\x1b[95m 13 \x1b[0m\x1b[96m 14 \x1b[0m\x1b[97m 15 \x1b[0m"
+  - out: ""
+  - out: "256-colour ramp:"
+  - out: "  \x1b[0m\x1b[48;5;196m  \x1b[0m\x1b[48;5;197m  \x1b[0m\x1b[48;5;198m  \x1b[0m\x1b[48;5;199m  \x1b[0m\x1b[48;5;200m  \x1b[0m\x1b[48;5;201m  \x1b[0m\x1b[48;5;202m  \x1b[0m\x1b[48;5;203m  \x1b[0m\x1b[48;5;204m  \x1b[0m\x1b[48;5;205m  \x1b[0m\x1b[48;5;206m  \x1b[0m\x1b[48;5;207m  \x1b[0m\x1b[48;5;208m  \x1b[0m\x1b[48;5;209m  \x1b[0m\x1b[48;5;210m  \x1b[0m\x1b[48;5;211m  \x1b[0m\x1b[48;5;212m  \x1b[0m\x1b[48;5;213m  \x1b[0m\x1b[48;5;214m  \x1b[0m\x1b[48;5;215m  \x1b[0m\x1b[48;5;216m  \x1b[0m\x1b[48;5;217m  \x1b[0m\x1b[48;5;218m  \x1b[0m\x1b[48;5;219m  \x1b[0m\x1b[48;5;220m  \x1b[0m\x1b[48;5;221m  \x1b[0m\x1b[48;5;222m  \x1b[0m\x1b[48;5;223m  \x1b[0m\x1b[48;5;224m  \x1b[0m\x1b[48;5;225m  \x1b[0m\x1b[48;5;226m  \x1b[0m\x1b[48;5;227m  \x1b[0m\x1b[48;5;228m  \x1b[0m\x1b[48;5;229m  \x1b[0m\x1b[48;5;230m  \x1b[0m\x1b[48;5;231m  \x1b[0m"
+  - out: ""
+  - out: "truecolor:"
+  - out: "  \x1b[0m\x1b[48;2;40;42;54m  \x1b[0m\x1b[48;2;255;121;198m  \x1b[0m\x1b[48;2;139;233;253m  \x1b[0m\x1b[48;2;80;250;123m  \x1b[0m\x1b[48;2;241;250;140m  \x1b[0m\x1b[48;2;189;147;249m  \x1b[0m"
+  - out: ""
+  - out: "\x1b[32m✓\x1b[0m 12 assertions passed   \x1b[0m\x1b[31m✗\x1b[0m 1 failed   \x1b[0m\x1b[33m▲\x1b[0m 2 warnings"

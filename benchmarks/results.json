@@ -1,0 +1,78 @@
+{
+  "python": "3.12.10",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "generated_by": "benchmarks/run.py",
+  "results": [
+    {
+      "case": "parse scene (1000 lines)",
+      "ms": 12.99,
+      "measured": "parse_yaml() on a synthetic scene"
+    },
+    {
+      "case": "parse scene (5000 lines)",
+      "ms": 63.96,
+      "measured": "parse_yaml() on a synthetic scene"
+    },
+    {
+      "case": "parse scene (20000 lines)",
+      "ms": 291.14,
+      "measured": "parse_yaml() on a synthetic scene"
+    },
+    {
+      "case": "parse ANSI log (1.0 MB)",
+      "ms": 145.27,
+      "measured": "3942 lines, 1.0 MB"
+    },
+    {
+      "case": "parse ANSI log (3.0 MB)",
+      "ms": 422.78,
+      "measured": "11826 lines, 3.1 MB"
+    },
+    {
+      "case": "parse ANSI log (5.0 MB)",
+      "ms": 800.4,
+      "measured": "19710 lines, 5.2 MB"
+    },
+    {
+      "case": "rasterise 40 rows @2x",
+      "ms": 126.36,
+      "px": "1976x2128",
+      "measured": "Renderer.render() in memory"
+    },
+    {
+      "case": "rasterise 200 rows @2x",
+      "ms": 628.23,
+      "px": "1994x9968",
+      "measured": "Renderer.render() in memory"
+    },
+    {
+      "case": "rasterise 40 rows @1x",
+      "ms": 60.97,
+      "px": "988x1044",
+      "measured": "Renderer.render() in memory"
+    },
+    {
+      "case": "rasterise 40 rows @3x",
+      "ms": 242.38,
+      "px": "2860x3173",
+      "measured": "Renderer.render() in memory"
+    },
+    {
+      "case": "render + PNG encode 40 rows",
+      "ms": 383.81,
+      "kb": 286.7,
+      "measured": "full render path including disk write"
+    },
+    {
+      "case": "render + PNG encode 200 rows",
+      "ms": 2014.18,
+      "kb": 1526.5,
+      "measured": "full render path including disk write"
+    },
+    {
+      "case": "render the bundled gallery (6 scenes)",
+      "ms": 889.94,
+      "measured": "load_scene() plus render_scene() for every examples/*.yaml"
+    }
+  ]
+}

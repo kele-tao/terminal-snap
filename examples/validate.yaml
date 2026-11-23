@@ -1,0 +1,16 @@
+# Captured by terminal-snap record on win32 - output is verbatim, ANSI codes preserved.
+title: terminal-snap validate
+theme: github-dark
+width: 88
+chrome: windows
+prompt: ❯
+lines:
+  - cmd: python -m terminal_snap validate examples/invalid/broken.yaml
+  - out: 7 problem(s) found
+  - out: "error  broken.yaml:4  theme: unknown theme 'draculaa'; built-in themes: catppuccin-mocha, dracula, github-dark, gruvbox, nord, solarized-dark, solarized-light, tokyo-night"
+  - out: "error  broken.yaml:5  width: must be between 20 and 400"
+  - out: "error  broken.yaml:6  colour: unknown field; valid fields: caption, chrome, cursor, font, font_size, line_numbers, lines, padding, prompt, scale, shadow, tab_width, theme, title, width, wrap"
+  - out: "error  broken.yaml:9  lines[1]: expected one of: text, cmd, out, notice, blank"
+  - out: "error  broken.yaml:10  lines[2].text: expected a string"
+  - out: "error  broken.yaml:11  lines[3].delay: must be between 0 and 60000"
+  - out: "error  broken.yaml:14  lines[5].fg: expected a hex colour like #ff79c6"

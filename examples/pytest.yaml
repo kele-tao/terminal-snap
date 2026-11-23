@@ -1,0 +1,21 @@
+# Captured by terminal-snap record on win32 - output is verbatim, ANSI codes preserved.
+title: pytest -q
+theme: nord
+width: 100
+chrome: macos
+prompt: ❯
+lines:
+  - cmd: "python -m pytest examples/demo_tests -q --color=yes -p no:asyncio"
+  - out: "\x1b[32m..\x1b[0m\x1b[31mF\x1b[0m\x1b[32m...\x1b[0m\x1b[31m                                                                   [100%]\x1b[0m"
+  - out: ================================== FAILURES ===================================
+  - out: "\x1b[1;31m____________________________ test_wrap_hard_break _____________________________\x1b[0m"
+  - out: ""
+  - out: "    \x1b[0m\x1b[94mdef\x1b[0m\x1b[90m \x1b[0m\x1b[92mtest_wrap_hard_break\x1b[0m() -> \x1b[0m\x1b[94mNone\x1b[0m:"
+  - out: "    \x1b[0m\x1b[90m    \x1b[0m\x1b[33m\"\"\"Wrong on purpose: 120 cells at width 40 make 3 rows, so this assertion fails.\"\"\"\x1b[0m"
+  - out: "        row_count = \x1b[0m\x1b[96mlen\x1b[0m(wrap_spans(parse_ansi(\x1b[0m\x1b[33m\"x\"\x1b[0m * \x1b[0m\x1b[94m120\x1b[0m), \x1b[0m\x1b[94m40\x1b[0m))"
+  - out: ">       \x1b[0m\x1b[94massert\x1b[0m row_count == \x1b[0m\x1b[94m4\x1b[0m"
+  - out: "\x1b[1;31mE       assert 3 == 4\x1b[0m"
+  - out: ""
+  - out: "\x1b[1;31mexamples\\demo_tests\\test_cart.py\x1b[0m:30: AssertionError"
+  - out: "\x1b[1;36m=========================== short test summary info ===========================\x1b[0m"
+  - out: "\x1b[31mFAILED\x1b[0m examples/demo_tests/test_cart.py::\x1b[0m\x1b[1mtest_wrap_hard_break\x1b[0m - assert 3 == 4"

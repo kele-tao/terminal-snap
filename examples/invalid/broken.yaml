@@ -1,0 +1,15 @@
+# A scene with six deliberate mistakes, used by the README validate demo.
+# Run: terminal-snap validate examples/invalid/broken.yaml
+title: broken scene
+theme: draculaa
+width: 12
+colour: green
+lines:
+  - cmd: this line is fine
+  - wibble: this kind does not exist
+  - text: 17
+  - out: "ok"
+    delay: -5
+  - blank: true
+  - text: "fine"
+    fg: "#12"

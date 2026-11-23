@@ -1,0 +1,34 @@
+{
+  "name": "tokyo-night",
+  "label": "Tokyo Night",
+  "background": "#1a1b26",
+  "foreground": "#c0caf5",
+  "canvas": "#13131a",
+  "chrome": {
+    "background": "#16161e",
+    "foreground": "#a9b1d6",
+    "border": "#101014"
+  },
+  "caption": "#565f89",
+  "line_number": "#565f89",
+  "accent": "#7dcfff",
+  "cursor": "#c0caf5",
+  "palette": [
+    "#15161e",
+    "#f7768e",
+    "#9ece6a",
+    "#e0af68",
+    "#7aa2f7",
+    "#bb9af7",
+    "#7dcfff",
+    "#a9b1d6",
+    "#414868",
+    "#ff7a93",
+    "#b9f27c",
+    "#ff9e64",
+    "#7da6ff",
+    "#bb9af7",
+    "#0db9d7",
+    "#c0caf5"
+  ]
+}

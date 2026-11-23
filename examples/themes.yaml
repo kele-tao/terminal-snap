@@ -1,0 +1,25 @@
+# Captured by terminal-snap record on win32 - output is verbatim, ANSI codes preserved.
+title: terminal-snap themes --palette gruvbox
+theme: gruvbox
+width: 64
+chrome: macos
+prompt: ❯
+lines:
+  - cmd: python -m terminal_snap themes --palette gruvbox
+  - out: Gruvbox Dark (gruvbox)
+  - out: "  black          \x1b[0m\x1b[48;2;40;40;40m      \x1b[0m  #282828"
+  - out: "  red            \x1b[0m\x1b[48;2;204;36;29m      \x1b[0m  #cc241d"
+  - out: "  green          \x1b[0m\x1b[48;2;152;151;26m      \x1b[0m  #98971a"
+  - out: "  yellow         \x1b[0m\x1b[48;2;215;153;33m      \x1b[0m  #d79921"
+  - out: "  blue           \x1b[0m\x1b[48;2;69;133;136m      \x1b[0m  #458588"
+  - out: "  magenta        \x1b[0m\x1b[48;2;177;98;134m      \x1b[0m  #b16286"
+  - out: "  cyan           \x1b[0m\x1b[48;2;104;157;106m      \x1b[0m  #689d6a"
+  - out: "  white          \x1b[0m\x1b[48;2;168;153;132m      \x1b[0m  #a89984"
+  - out: "  bright-black   \x1b[0m\x1b[48;2;146;131;116m      \x1b[0m  #928374"
+  - out: "  bright-red     \x1b[0m\x1b[48;2;251;73;52m      \x1b[0m  #fb4934"
+  - out: "  bright-green   \x1b[0m\x1b[48;2;184;187;38m      \x1b[0m  #b8bb26"
+  - out: "  bright-yellow  \x1b[0m\x1b[48;2;250;189;47m      \x1b[0m  #fabd2f"
+  - out: "  bright-blue    \x1b[0m\x1b[48;2;131;165;152m      \x1b[0m  #83a598"
+  - out: "  bright-magenta \x1b[0m\x1b[48;2;211;134;155m      \x1b[0m  #d3869b"
+  - out: "  bright-cyan    \x1b[0m\x1b[48;2;142;192;124m      \x1b[0m  #8ec07c"
+  - out: "  bright-white   \x1b[0m\x1b[48;2;235;219;178m      \x1b[0m  #ebdbb2"

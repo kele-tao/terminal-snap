@@ -1,0 +1,34 @@
+{
+  "name": "nord",
+  "label": "Nord",
+  "background": "#2e3440",
+  "foreground": "#d8dee9",
+  "canvas": "#242933",
+  "chrome": {
+    "background": "#3b4252",
+    "foreground": "#d8dee9",
+    "border": "#20242e"
+  },
+  "caption": "#81a1c1",
+  "line_number": "#616e88",
+  "accent": "#88c0d0",
+  "cursor": "#d8dee9",
+  "palette": [
+    "#3b4252",
+    "#bf616a",
+    "#a3be8c",
+    "#ebcb8b",
+    "#81a1c1",
+    "#b48ead",
+    "#88c0d0",
+    "#e5e9f0",
+    "#4c566a",
+    "#d08770",
+    "#b1d196",
+    "#f0d399",
+    "#8fbcbb",
+    "#c895bf",
+    "#93ccdc",
+    "#eceff4"
+  ]
+}

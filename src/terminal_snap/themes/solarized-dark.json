@@ -1,0 +1,34 @@
+{
+  "name": "solarized-dark",
+  "label": "Solarized Dark",
+  "background": "#002b36",
+  "foreground": "#93a1a1",
+  "canvas": "#001f27",
+  "chrome": {
+    "background": "#073642",
+    "foreground": "#839496",
+    "border": "#001f27"
+  },
+  "caption": "#586e75",
+  "line_number": "#586e75",
+  "accent": "#2aa198",
+  "cursor": "#93a1a1",
+  "palette": [
+    "#073642",
+    "#dc322f",
+    "#859900",
+    "#b58900",
+    "#268bd2",
+    "#d33682",
+    "#2aa198",
+    "#eee8d5",
+    "#586e75",
+    "#cb4b16",
+    "#6cbe00",
+    "#d9a521",
+    "#4aa3e0",
+    "#e05a9c",
+    "#4fc2b7",
+    "#fdf6e3"
+  ]
+}

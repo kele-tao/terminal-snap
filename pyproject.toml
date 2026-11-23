@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "terminal-snap"
+version = "1.0.0"
+description = "Script terminal screenshots as YAML and render pixel-perfect PNGs in pure Python: 7 themes, ANSI truecolor, real command capture, deterministic output."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "kele" }]
+keywords = ["terminal", "screenshot", "png", "cli", "themes", "documentation"]
+dependencies = ["Pillow>=9.0"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Multimedia :: Graphics",
+  "Topic :: Software Development :: Documentation",
+  "Topic :: Terminals",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "ruff>=0.4"]
+
+[project.urls]
+Homepage = "https://github.com/kele-tao/terminal-snap"
+Issues = "https://github.com/kele-tao/terminal-snap/issues"
+
+[project.scripts]
+terminal-snap = "terminal_snap.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+terminal_snap = ["themes/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests", "examples", "benchmarks"]
+extend-exclude = ["docs/gallery"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP"]
+# UP031 wants f-strings everywhere; the ANSI hex tables read better as %-format,
+# and keeping one formatting style in the palette code avoids double-brace noise.
+ignore = ["UP031"]

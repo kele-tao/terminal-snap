@@ -1,0 +1,14 @@
+# Captured by terminal-snap record on win32 - output is verbatim, ANSI codes preserved.
+title: terminal-snap fonts
+theme: catppuccin-mocha
+width: 84
+chrome: macos
+prompt: ❯
+lines:
+  - cmd: python -m terminal_snap fonts
+  - out: "default: Cascadia Mono (C:\\WINDOWS\\Fonts\\CascadiaMono.ttf)"
+  - out: " * Cascadia Mono       C:\\WINDOWS\\Fonts\\CascadiaMono.ttf"
+  - out: "   Cascadia Code       C:\\WINDOWS\\Fonts\\CascadiaCode.ttf"
+  - out: "   Consolas            C:\\WINDOWS\\Fonts\\consola.ttf"
+  - out: "   Courier New         C:\\WINDOWS\\Fonts\\cour.ttf"
+  - out: "   Lucida Console      C:\\WINDOWS\\Fonts\\lucon.ttf"

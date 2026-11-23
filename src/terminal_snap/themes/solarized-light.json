@@ -1,0 +1,34 @@
+{
+  "name": "solarized-light",
+  "label": "Solarized Light",
+  "background": "#fdf6e3",
+  "foreground": "#586e75",
+  "canvas": "#efe7d0",
+  "chrome": {
+    "background": "#eee8d5",
+    "foreground": "#657b83",
+    "border": "#d9d1ba"
+  },
+  "caption": "#93a1a1",
+  "line_number": "#93a1a1",
+  "accent": "#268bd2",
+  "cursor": "#586e75",
+  "palette": [
+    "#073642",
+    "#dc322f",
+    "#859900",
+    "#b58900",
+    "#268bd2",
+    "#d33682",
+    "#2aa198",
+    "#eee8d5",
+    "#586e75",
+    "#cb4b16",
+    "#6cbe00",
+    "#b18700",
+    "#1f6fa8",
+    "#b02c6f",
+    "#1c847d",
+    "#fdf6e3"
+  ]
+}

@@ -1,0 +1,56 @@
+name: Bug report
+description: Something rendered wrong, crashed, or produced a confusing error.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. A minimal scene file plus the exact command is the
+        fastest path to a fix.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Include the command, the output, and the exit code.
+      placeholder: |
+        $ terminal-snap render scene.yaml --out shot.png
+        rendered shot.png  1200x400 px ...
+        (but the box drawing characters were misaligned)
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: scene
+    attributes:
+      label: Minimal scene file
+      description: Please paste the smallest scene that reproduces the problem.
+      render: yaml
+  - type: input
+    id: version
+    attributes:
+      label: terminal-snap version
+      description: Output of `terminal-snap --version`.
+      placeholder: terminal-snap 1.0.0
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Python / OS / font
+      placeholder: Python 3.12.10, Windows 11, Cascadia Mono
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I am on the latest release.
+          required: true
+        - label: I searched existing issues first.
+          required: true
