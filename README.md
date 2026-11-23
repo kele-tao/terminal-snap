@@ -1,5 +1,7 @@
 # terminal-snap
 
+**English** | [简体中文](README.zh-CN.md)
+
 **Write a terminal screenshot as a YAML file, render it as a pixel-perfect PNG in pure Python.** No browser, no headless Chrome, no ffmpeg, no external binary — just Pillow.
 
 [![ci](https://github.com/kele-tao/terminal-snap/actions/workflows/ci.yml/badge.svg)](https://github.com/kele-tao/terminal-snap/actions/workflows/ci.yml)
