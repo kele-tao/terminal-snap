@@ -58,7 +58,7 @@ python -m terminal_snap gallery examples --out docs/gallery --html docs/gallery.
 
 ## Pull request checklist
 
-- [ ] `python -m pytest -q` passes (was 180 tests at v1.0.0; do not lower it).
+- [ ] `python -m pytest -q` passes (was 190 tests at v1.0.0; do not lower it).
 - [ ] `python -m ruff check .` is clean.
 - [ ] New user-facing behaviour is documented in README.md and CHANGELOG.md.
 - [ ] New errors have a test that asserts the message and the exit code.

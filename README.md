@@ -5,7 +5,7 @@
 [![ci](https://github.com/kele-tao/terminal-snap/actions/workflows/ci.yml/badge.svg)](https://github.com/kele-tao/terminal-snap/actions/workflows/ci.yml)
 ![python](https://img.shields.io/badge/python-3.10%2B-blue)
 ![license](https://img.shields.io/badge/license-MIT-green)
-![tests](https://img.shields.io/badge/tests-180%20passing-brightgreen)
+![tests](https://img.shields.io/badge/tests-190%20passing-brightgreen)
 
 ![terminal-snap gallery](docs/screenshot.png)
 

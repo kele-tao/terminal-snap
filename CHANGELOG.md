@@ -37,7 +37,7 @@ First public release.
   jobs can render without shelling out.
 - **Benchmarks.** `benchmarks/run.py` produces `results.json` and `results.md`; the
   README performance table is generated from it.
-- 180 pytest tests, ruff-clean, Python 3.10/3.11/3.12 CI.
+- 190 pytest tests, ruff-clean, Python 3.10/3.11/3.12 CI.
 
 ### Known limitations
 
